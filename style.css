@@ -1,0 +1,24 @@
+body{
+    padding: 100px;
+    background-color: antiquewhite;
+}
+.heading{
+    text-align: center;
+}
+.school{
+    color: tomato;
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+}
+.calculate-btn{
+    padding: 10px 25px;
+    color: white;
+    background-image: linear-gradient(tomato,#ff6347);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.calculate-btn:hover{
+    color: black;
+}
