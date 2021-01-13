@@ -4,9 +4,12 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>HPU CGPA Calculator</title>
-      <link rel="stylesheet" href="style.css">   
+      <link rel="stylesheet" href="style.css">
+
       <!--Fav-icon -->
+
       <link rel="icon" href="fav-icon.png" type="image/gif" sizes="16x16">
+
       <!--Bootstrap Link-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -18,13 +21,12 @@
    <body>
 
    	<div class="container">
-		<br><br>
    		<div class="jumbotron">
    	    <h2>Whats your gpa out of 4?</h2>
         <p><b>[Note:]</b>We are using the following scale to convert.</p>
         <img src="cgpa-scale.jpg" class="img-fluid">
-		<label>Your Subject Mark/Score:</label>
-   		<input id="marks" type="text" placeholder="Your Marks/Score" class="form-control">
+   		<h3>Enter your marks:</h3>
+   		<input id="marks" type="text" placeholder="Your Marks" class="form-control">
    		<br>
    		<a href="#" id="convert" class="calculate-btn">Convert to 4</a>
    		<br><br>
@@ -34,9 +36,9 @@
 
       <div class="container">
          <h2 class="heading"><span class="school">HPU</span> CGPA Calculator</h2>
-         <p><b>[Note:]</b>We are using the following formula.</p>
+         <p style="color:grey"><b>[Note:]</b>We are using the following formula.</p>
          <br>
-         <p><b>My Overall Cgpa: </b>Average of(Gpa * Credit) / Average of(Credit)</p>
+         <p style="color:grey"><b>My Overall Cgpa: </b>Average of(Gpa * Credit) / Average of(Credit)</p>
          <br>
          <hr>
          <div class="table-responsive">
@@ -44,7 +46,7 @@
                <thead>
                  <tr>
                    <th scope="col">Gpa</th>
-	           <th scope="col">Credit</th>
+                   <th scope="col">Credit</th>
                    <th scope="col">Gpa*Credit</th>
                    <th scope="col">Sum(Credit)</th>
                    <th scope="col">Sum(Gpa*Credit)</th>
@@ -54,23 +56,26 @@
                <tbody>
                  <tr>
                    <td id="gpa-display">0</td>
-	           <td id="credit-display">0</td>
+                   <td id="credit-display">0</td>
                    <td id="gpaxcredit-display">0</td>
                    <td id="current-average-Credit">0</td>
                    <td id="average-gpa-display">0</td>
                    <td id="my-cgpa-display">0</td>
                  </tr>
                </tbody>
+               <br>
+               <p style="color:grey"><b>[Note:]</b>If On mobile You can't see the whole table,then,just swipe to right.</p>
              </table>
          </div>
    
          <div class="input-section">
          <label>Subject Credit:</label><input id="credit" type="text" placeholder="Subject credit" class="form-control">
          <br>
-         <label>Subject Gpa:</label><input id="gpa" type="text" placeholder="Your gpa" class="form-control">
-         <br><br>
-         <p><b>[Note:]</b>Keep calculating from first to last.At the end, you'll get the overall CGPA.</p>
+         <label>Subject Credit:</label><input id="gpa" type="text" placeholder="Your gpa" class="form-control">
+         <br>
          <a href="#" id="calculate" class="calculate-btn"> Calculate</a>
+         <br><br>
+         <p style="color:grey"><b>[Note:]</b>Keep calculating from first to last.At the end, you'll get the overall CGPA.</p>
          </div>
       </div>
 
