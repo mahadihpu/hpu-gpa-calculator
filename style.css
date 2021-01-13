@@ -1,5 +1,10 @@
+body{
+    
+    background-color: antiquewhite;
+}
 .heading{
     text-align: center;
+    padding-top: 20px;
 }
 .school{
     color: tomato;
