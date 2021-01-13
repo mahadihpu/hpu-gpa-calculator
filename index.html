@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Personal CGPA Calculator</title>
+      <title>HPU CGPA Calculator</title>
       <link rel="stylesheet" href="style.css">
 
       <!--Bootstrap Link-->
@@ -32,6 +32,9 @@
 
       <div class="container">
          <h2 class="heading"><span class="school">HPU</span> CGPA Calculator</h2>
+         <p><b>[Note:]</b>We are using the following formula.</p>
+         <br>
+         <p><b>My Overall Cgpa: </b>Average of(Gpa * Credit) / Average of(Credit)</p>
          <br>
          <hr>
          <div class="table-responsive">
@@ -39,6 +42,7 @@
                <thead>
                  <tr>
                    <th scope="col">Gpa</th>
+	           <th scope="col">Credit</th>
                    <th scope="col">Gpa*Credit</th>
                    <th scope="col">Sum(Credit)</th>
                    <th scope="col">Sum(Gpa*Credit)</th>
@@ -48,6 +52,7 @@
                <tbody>
                  <tr>
                    <td id="gpa-display">0</td>
+	           <td id="credit-display">0</td>
                    <td id="gpaxcredit-display">0</td>
                    <td id="current-average-Credit">0</td>
                    <td id="average-gpa-display">0</td>
@@ -58,9 +63,9 @@
          </div>
    
          <div class="input-section">
-         <input id="credit" type="text" placeholder="Subject credit" class="form-control">
+         <label>Subject Credit:</label><input id="credit" type="text" placeholder="Subject credit" class="form-control">
          <br>
-         <input id="gpa" type="text" placeholder="Your gpa" class="form-control">
+         <label>Subject Credit:</label><input id="gpa" type="text" placeholder="Your gpa" class="form-control">
          <br>
          <a href="#" id="calculate" class="calculate-btn"> Calculate</a>
          </div>
